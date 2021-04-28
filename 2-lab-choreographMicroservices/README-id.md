@@ -1,5 +1,5 @@
 # Lab 2: Membangun _Microservices_ Terkoreografi
-[Bahasa Inggris](README.md) | [Bahasa Indonesia](Readme-id.md)
+[Bahasa Inggris](README.md) | [Bahasa Indonesia](README-id.md)
 
 Sebagai kelanjutan dari lokakarya sebelumnya, pada lokakarya kali ini Anda akan membangun sistem yang lebih kompleks yang melibatkan beberapa _microservices_. Anda akan mempelajari cara menggabungkan komunikasi sinkron dan asinkron karena ini adalah pola yang umum digunakan dalam membangun _microservices_.
 

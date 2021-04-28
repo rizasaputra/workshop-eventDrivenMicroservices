@@ -1,5 +1,5 @@
 # Lab 3: Mengorkestrasi _Microservices_
-[Bahasa Inggris](README.md) | [Bahasa Indonesia](Readme-id.md)
+[Bahasa Inggris](README.md) | [Bahasa Indonesia](README-id.md)
 
 Selain koreografi, kita juga perlu memahami pendekatan lain yang disebut orkestrasi. Di lab ini, Anda akan membuat sebuah _state machine_ untuk mengelola orkestrasi antar _microservices_.
 

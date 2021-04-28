@@ -1,5 +1,5 @@
 # Lab 1: Basic Dispatch Consume
-[English](README.md) | [Indonesian](Readme-id.md)
+[English](README.md) | [Indonesian](README-id.md)
 
 In this workshop, you will build 2 AWS Lambda Functions. One AWS Lambda Function (as the producer) will dispatch events, and one AWS Lambda Function (as the consumer) to receive events. In addition to receiving events, Consumer will also print logs to AWS CloudWatch Logs to ensure the flow is going well.
 

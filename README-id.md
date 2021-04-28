@@ -1,5 +1,5 @@
 ## Terjemahan
-[Bahasa Inggris](README.md) | [Bahasa Indonesia](Readme-id.md)
+[Bahasa Inggris](README.md) | [Bahasa Indonesia](README-id.md)
 
 ## 🚀 Selamat datang di lokakarya _Event-Driven Microservices_ bersama AWS
 Dalam lokakarya ini, Anda akan membangun dan menerapkan serangkaian _microservices_ sederhana dengan pendekatan arsitektur _event-driven_.

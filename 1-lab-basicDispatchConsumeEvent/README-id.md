@@ -1,5 +1,5 @@
 # Lab 1: Pengiriman dan Penerimaan Dasar
-[Bahasa Inggris](README.md) | [Bahasa Indonesia](Readme-id.md)
+[Bahasa Inggris](README.md) | [Bahasa Indonesia](README-id.md)
 
 Dalam lokakarya ini, Anda akan membangun 2 fungsi AWS Lambda. Satu fungsi AWS Lambda (sebagai Produsen) akan mengirimkan _event_, dan satu Fungsi AWS Lambda (sebagai Konsumen) akan menerima _event_. Selain menerima _event_, Konsumen juga akan menulis log ke AWS CloudWatch Logs untuk memastikan aliran prosesnya berjalan dengan baik.
 
