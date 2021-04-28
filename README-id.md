@@ -79,9 +79,9 @@ Nama Lab | Tingkat | Durasi
 [Lab 3 - Mengorkestrasi _Microservices_](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/tree/master/3-lab-orchestrateMicroservices) | Menengah | 15 menit
 
 ### **💡 PETUNJUK** dan **😕 Anda buntu?**
-Untuk tugas yang lebih kompleks yang harus Anda selesaikan, akan ada ** 💡 PETUNJUK ** untuk memandu Anda menyelesaikannya. Seringkali, petunjuk tersebut juga akan menyertakan (beberapa) tautan untuk bacaan lebih lanjut.
+Untuk tugas yang lebih kompleks yang harus Anda selesaikan, akan ada **💡 PETUNJUK** untuk memandu Anda menyelesaikannya. Seringkali, petunjuk tersebut juga akan menyertakan (beberapa) tautan untuk bacaan lebih lanjut.
 
-Harap diingat bahwa jika Anda mengalami kebuntuan dan tidak dapat melanjutkan ke langkah berikutnya, Anda selalu dapat melihat berkas referensi utama untuk melihat solusinya. Untuk akses yang mudah, ** 😕 Anda buntu? ** akan memandu Anda langsung ke solusinya.
+Harap diingat bahwa jika Anda mengalami kebuntuan dan tidak dapat melanjutkan ke langkah berikutnya, Anda selalu dapat melihat berkas referensi utama untuk melihat solusinya. Untuk akses yang mudah, **😕 Anda buntu?** akan memandu Anda langsung ke solusinya.
 
 ## Layanan AWS
 Beberapa layanan AWS yang digunakan dalam lokakarya ini adalah sebagai berikut:

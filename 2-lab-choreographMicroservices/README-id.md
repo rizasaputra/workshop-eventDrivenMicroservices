@@ -42,7 +42,7 @@ pip install boto3
 > **💡 PETUNJUK**
 >- Gunakan API `update_item()` untuk menyimpan data ke DynamoDB. Anda dapat melihat referensi API terkait [di sini](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update_item)
 
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/2-lab-choreographMicroservices/source/lambda-functions/order-service/app.py)
 
 ### Langkah 4: Buat sebuah Dictionary untuk _payload data_ 
@@ -70,7 +70,7 @@ pip install boto3
 > - Gunakan`json.dumps()` untuk mengubah Dictionary menjadi JSON string. Berikut ini [dokumentasinya](https://docs.python.org/3/library/json.html)
 >- Gunakan `os.getenv()` untuk mendapatkan data dari _environment variable_
 
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/2-lab-choreographMicroservices/source/lambda-functions/order-service/app.py)
 
 ### Langkah 6: Panggil fungsi save_to_db()
@@ -81,7 +81,7 @@ pip install boto3
 ```python
 save_to_db(id)
 ```
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/2-lab-choreographMicroservices/source/lambda-functions/order-service/app.py)
 
 ### Langkah 7: Mengerjakan `logistic-service`
@@ -114,7 +114,7 @@ save_to_db(id)
 >**💡 PETUNJUK**
 >- Gunakan objek EventPattern untuk membuat Amazon EventBridge Pattern. Berikut ini [referensi API](https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_events/EventPattern.html) terkait
 
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/2-lab-choreographMicroservices/source/cdk/app.py)
 
 ### Langkah 13: Buat EventBridge Rule
@@ -124,7 +124,7 @@ save_to_db(id)
 >**💡 PETUNJUK**
 >- Gunakan _construct_ Rule construct untuk membuat EventBridge Rule. Berikut ini [referensi API](https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_events/Rule.html) terkait
 
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/2-lab-choreographMicroservices/source/cdk/app.py)
 
 ### Langkah 14: Review integrasi Amazon API GAteway
@@ -183,7 +183,7 @@ Langkah-langkah berikutnya adalah opsional dan silakan bersihkan sumber daya yan
 - Buka app.py
 - Lengkapi tugas untuk mengirim _event_ `fulfilment_completed` sehingga `logistic_service` dapat menerima pesan tersebut
 
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/2-lab-choreographMicroservices/source/lambda-functions/fulfilment-service/app.py)
 
 #### Mengerjakan `logistic-service`
@@ -192,7 +192,7 @@ Langkah-langkah berikutnya adalah opsional dan silakan bersihkan sumber daya yan
 - Lengkapi tugas untuk mengurai (_parse_) _event_ dari Amazon EventBridge
 - Simpan data ke DynamoDB
 
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/2-lab-choreographMicroservices/source/lambda-functions/logistic-service/app.py)
 
 #### Memperbarui aplikasi CDK
@@ -200,7 +200,7 @@ Langkah-langkah berikutnya adalah opsional dan silakan bersihkan sumber daya yan
 - Buka `app.py`
 - Cari `[ADDITIONAL TASK]` dan buat EventBridge Pattern dan EventBrige Rule untuk pesan `fulfilment_completed`
 
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/2-lab-choreographMicroservices/source/cdk/app.py)
 
 ### Langkah 19: Deploy ulang aplikasi CDK

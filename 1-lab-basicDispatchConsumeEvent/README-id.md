@@ -42,7 +42,7 @@ pip install boto3
 > - Anda memerlukan sebuah _client_ untuk terhubung ke sumber daya AWS. Pada Python, Anda perlu menggunakan _library_ boto3
 > - Gunakan API put_events() untuk mengirim _event_ ke Amazon EventBridge. Berikut ini [tautannya](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html)
 
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/1-lab-basicDispatchConsumeEvent/source/lambda-functions/dispatch-function/app.py)
 
 ### Langkah 3: Buat Penerima (_Consumer_) dengan AWS Lambda
@@ -53,7 +53,7 @@ pip install boto3
 > **💡 PETUNJUK**
 > - Perintah Python `print` ketika dijalankan di dalam fungsi AWS Lambda akan mengirim output ke Amazon CloudWatch Logs
 
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/1-lab-basicDispatchConsumeEvent/source/lambda-functions/consume-function/app.py)
 
 ### Langkah 4: Buat sebuah aplikasi AWS CDK
@@ -92,7 +92,7 @@ pip install boto3
 > - Membuat definisi Amazon EventBridge Rule cukup mudah. Berikut ini [tautan](https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_events/Rule.html) referensi API terkait 
 > - Jangan lupa tambahkan Target ke Rule ini. Amazon EventBridge menyediakan integrasi dengan berbagai layanan AWS. Berikut ini [tautan](https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_events_targets/LambdaFunction.html) referensi API  untuk menambahkan fungsi AWS Lambda sebagai Target
 
-> **😕 Anda buntu?**
+> ### 😕 Anda buntu?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/1-lab-basicDispatchConsumeEvent/source/cdk/app.py)
 
 ### Langkah 10: Tandai (_Tagging_) aplikasi AWS CDK Anda
