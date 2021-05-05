@@ -1,5 +1,5 @@
 # Lab 3: Orchestrating Microservices
-[English](README.md) | [Indonesian](README-id.md)
+[English](README.md) | [Bahasa Indonesia](README-id.md)
 
 Besides choreography, we also need to understand another approach, widely known as orchestration. In this lab, you will build a state machine to manage orchestration between microservices.
 

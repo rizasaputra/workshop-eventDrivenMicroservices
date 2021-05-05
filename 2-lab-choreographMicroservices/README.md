@@ -1,5 +1,5 @@
 # Lab 2: Building Choreographed Microservices  
-[English](README.md) | [Indonesian](README-id.md)
+[English](README.md) | [Bahasa Indonesia](README-id.md)
 
 As a continuation of the previous workshop, in this workshop, you will do a more complex system that uses multiple microservices. You will learn how to combine synchronous and asynchronous communication as it's a commonly used pattern in building microservices.
 

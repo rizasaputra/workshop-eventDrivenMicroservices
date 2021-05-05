@@ -1,13 +1,13 @@
 # Lab 1: Pengiriman dan Penerimaan Dasar
-[Bahasa Inggris](README.md) | [Bahasa Indonesia](README-id.md)
+[English](README.md) | [Bahasa Indonesia](README-id.md)
 
-Dalam lokakarya ini, Anda akan membangun 2 fungsi AWS Lambda. Satu fungsi AWS Lambda (sebagai Produsen) akan mengirimkan _event_, dan satu Fungsi AWS Lambda (sebagai Konsumen) akan menerima _event_. Selain menerima _event_, Konsumen juga akan menulis log ke AWS CloudWatch Logs untuk memastikan aliran prosesnya berjalan dengan baik.
+Dalam _workshop_ ini, Anda akan membangun 2 fungsi AWS Lambda. Satu fungsi AWS Lambda (sebagai Produsen) akan mengirimkan (_dispatch_) _event_, dan satu Fungsi AWS Lambda (sebagai Konsumen) akan menerima (_consume_) _event_. Selain menerima _event_, Konsumen juga akan menulis log ke AWS CloudWatch Logs untuk memastikan aliran prosesnya berjalan dengan baik.
 
 ## Diagram
 ![Diagram Lab 1](https://raw.githubusercontent.com/donnieprakoso/workshop-eventDrivenMicroservices/master/1-lab-basicDispatchConsumeEvent/lab1-diagram.png)
 
 ## Tugas
-Ini adalah tugas-tugas yang harus Anda kerjakan. Jika pada suatu titik Anda mengalami kebuntuan, silakan rujuk referensi utama di folder `source/`.
+Ini adalah tugas-tugas yang harus Anda kerjakan. Jika Anda mengalami kebingungan, silakan rujuk referensi utama di folder `source/`.
 
 ### Langkah 0: Persiapkan folder `work` dan boto3
 #### Install _library_ boto3
@@ -42,7 +42,7 @@ pip install boto3
 > - Anda memerlukan sebuah _client_ untuk terhubung ke sumber daya AWS. Pada Python, Anda perlu menggunakan _library_ boto3
 > - Gunakan API put_events() untuk mengirim _event_ ke Amazon EventBridge. Berikut ini [tautannya](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html)
 
-> ### 😕 Anda buntu?
+> ### 😕 Anda kebingungan?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/1-lab-basicDispatchConsumeEvent/source/lambda-functions/dispatch-function/app.py)
 
 ### Langkah 3: Buat Penerima (_Consumer_) dengan AWS Lambda
@@ -53,7 +53,7 @@ pip install boto3
 > **💡 PETUNJUK**
 > - Perintah Python `print` ketika dijalankan di dalam fungsi AWS Lambda akan mengirim output ke Amazon CloudWatch Logs
 
-> ### 😕 Anda buntu?
+> ### 😕 Anda kebingungan?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/1-lab-basicDispatchConsumeEvent/source/lambda-functions/consume-function/app.py)
 
 ### Langkah 4: Buat sebuah aplikasi AWS CDK
@@ -92,7 +92,7 @@ pip install boto3
 > - Membuat definisi Amazon EventBridge Rule cukup mudah. Berikut ini [tautan](https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_events/Rule.html) referensi API terkait 
 > - Jangan lupa tambahkan Target ke Rule ini. Amazon EventBridge menyediakan integrasi dengan berbagai layanan AWS. Berikut ini [tautan](https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_events_targets/LambdaFunction.html) referensi API  untuk menambahkan fungsi AWS Lambda sebagai Target
 
-> ### 😕 Anda buntu?
+> ### 😕 Anda kebingungan?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/1-lab-basicDispatchConsumeEvent/source/cdk/app.py)
 
 ### Langkah 10: Tandai (_Tagging_) aplikasi AWS CDK Anda
@@ -106,7 +106,7 @@ app.synth()
 
 ### Langkah 11: Install semua _library_ yang dibutuhkan untuk membangun aplikasi CDK
 - Masuk ke `work/cdk/`
-- Buat sebuah file dengan nama `requirements.txt`. Ini adalah metode standar untuk menginstall _dependencies_ untuk aplikasi Python
+- Buat sebuah file dengan nama `requirements.txt`. Ini adalah metode standar untuk menginstall _libraries_ yang dibutuhkan untuk aplikasi Python
 - Tuliskan baris-baris berikut:
 ```
 aws-cdk.core==1.70.0
@@ -147,7 +147,7 @@ Sekarang kita akan menguji fungsi Pengirim yang akan mengirim sebuah _event_ ke 
 - Masuk ke [dashboard](https://ap-southeast-1.console.aws.amazon.com/cloudwatch/home) Amazon CloudWatch Log groups
 - Cari log untuk fungsi Lambda **Penerima**. Untuk menyaring berdasarkan nama Log group, Anda bisa mengetik "BasicDispatchConsume" pada kotak pencarian
 - Cari dan buka Log Stream terbaru
-- Jika Anda melihat ada sebuah JSON dengan data dari _event_ yang dikirim oleh fungsi **Pengirim** melalui Amazon EventBridge, maka Anda telah menyelesaikan lokakarya ini
+- Jika Anda melihat ada sebuah JSON dengan data dari _event_ yang dikirim oleh fungsi **Pengirim** melalui Amazon EventBridge, maka Anda telah menyelesaikan _workshop_ ini
 
 ![Diagram Lab 1](https://raw.githubusercontent.com/donnieprakoso/workshop-eventDrivenMicroservices/master/1-lab-basicDispatchConsumeEvent/lab1-cloudwatch.png)
 

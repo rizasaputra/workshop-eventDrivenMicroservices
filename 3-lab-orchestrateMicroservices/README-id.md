@@ -1,9 +1,9 @@
 # Lab 3: Mengorkestrasi _Microservices_
-[Bahasa Inggris](README.md) | [Bahasa Indonesia](README-id.md)
+[English](README.md) | [Bahasa Indonesia](README-id.md)
 
 Selain koreografi, kita juga perlu memahami pendekatan lain yang disebut orkestrasi. Di lab ini, Anda akan membuat sebuah _state machine_ untuk mengelola orkestrasi antar _microservices_.
 
-Dalam lokakarya ini, Anda akan membangun sistem perbankan sederhana yang memiliki 4 domain. Sistem ini bertujuan untuk melakukan penilaian dan validasi sebelum pembukaan rekening di sebuah bank.
+Dalam _workshop_ ini, Anda akan membangun sistem perbankan sederhana yang memiliki 4 domain. Sistem ini bertujuan untuk melakukan penilaian dan validasi sebelum pembukaan rekening di sebuah bank.
 
 Anda akan mempelajari cara menggunakan AWS Step Functions untuk membangun _state machine_ untuk orkestrasi. Selain itu, Anda juga dapat menggunakan beberapa tipe status yang disediakan oleh AWS Step Functions.
 
@@ -11,7 +11,7 @@ Anda akan mempelajari cara menggunakan AWS Step Functions untuk membangun _state
 ![Diagram Lab 3](https://raw.githubusercontent.com/donnieprakoso/workshop-eventDrivenMicroservices/master/3-lab-orchestrateMicroservices/lab3-diagram.png)
 
 ## Tugas
-Ini adalah tugas-tugas yang harus Anda kerjakan. Jika pada suatu titik Anda mengalami kebuntuan, silakan rujuk referensi utama di folder `source/`.
+Ini adalah tugas-tugas yang harus Anda kerjakan. Jika Anda mengalami kebingungan, silakan rujuk referensi utama di folder `source/`.
 
 ### Langkah 0: Persiapkan folder `work` dan boto3
 #### Install _library_ boto3
@@ -48,7 +48,7 @@ pip install boto3
 > - Gunakan _construct_ LambdaInvoke untuk membuat sebuah _task_. Berikut ini [referensi API](https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_stepfunctions_tasks/LambdaInvoke.html) terkait
 > - If you're not using AWS Lambda function, you can use other available constructs to build a task.
 
-> ### 😕 Anda buntu?
+> ### 😕 Anda kebingungan?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/3-lab-orchestrateMicroservices/source/cdk/app.py)
 
 ### Langkah 3: Buat dua _states_
@@ -57,7 +57,7 @@ pip install boto3
 > **💡 PETUNJUK**
 > - Gunakan _construct_ `Succeed` untuk membuat definisi _state_. Berikut ini [referensi API](https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_stepfunctions/Succeed.html) terkait
 
-> ### 😕 Anda buntu?
+> ### 😕 Anda kebingungan?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/3-lab-orchestrateMicroservices/source/cdk/app.py)
 
 ### Langkah 4: Buat sebuah _parallel_
@@ -67,7 +67,7 @@ pip install boto3
 > **💡 PETUNJUK**
 > - Gunakan _construct_ `Parallel` untuk menjalankan satu atau lebih _task_ di waktu yang sama. Berikut ini [referensi API](https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_stepfunctions/Parallel.html) terkait
 
-> ### 😕 Anda buntu?
+> ### 😕 Anda kebingungan?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/3-lab-orchestrateMicroservices/source/cdk/app.py)
 
 ### Langkah 5: Bagian terakhir, membuat sebuah _state machine_ 
@@ -77,13 +77,13 @@ pip install boto3
 >**💡 PETUNJUK**
 > - Berikut ini [referensi API](https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_stepfunctions/StateMachine.html) terkait
 
-> ### 😕 Anda buntu?
+> ### 😕 Anda kebingungan?
 > Lihat solusinya [di sini](https://github.com/donnieprakoso/workshop-eventDrivenMicroservices/blob/master/3-lab-orchestrateMicroservices/source/cdk/app.py)
 
 ### Langkah 6: Install semua _library_ yang dibutuhkan untuk membangun dan menjalankan aplikasi CDK
 - Buka terminal
 - Masuk ke `work/cdk/`
-- Buat sebuah file dengan nama `requirements.txt`. Ini adalah metode standar untuk menginstall _dependencies_ untuk aplikasi Python
+- Buat sebuah file dengan nama `requirements.txt`. Ini adalah metode standar untuk menginstall _libraries_ yang dibutuhkan untuk aplikasi Python
 - Tuliskan baris-baris berikut:
 ```
 aws-cdk.core==1.70.0
@@ -128,7 +128,7 @@ cdk deploy
 
 ![Lab 3: Skenario 1](https://raw.githubusercontent.com/donnieprakoso/workshop-eventDrivenMicroservices/master/3-lab-orchestrateMicroservices/lab3-scenario1.png)
 
-#### Skenario uji 2: Permohonan disetujui melalui tinjauan manusia (_Human Review Checking_)
+#### Skenario uji 2: Permohonan disetujui melalui tinjauan manusia (_human review checking_)
 - Klik tombol `Start Execution` di pojok kanan atas
 - Di bagian Input, salin dan tempel JSON di bawah:
 ```json

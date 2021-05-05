@@ -1,5 +1,5 @@
 ## Translation
-[English](README.md) | [Indonesian](README-id.md)
+[English](README.md) | [Bahasa Indonesia](README-id.md)
 
 ## 🚀 Welcome to the Event-Driven Microservices workshop with AWS
 
