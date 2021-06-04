@@ -4,7 +4,7 @@
 Dalam _workshop_ ini, Anda akan membangun 2 fungsi AWS Lambda. Satu fungsi AWS Lambda (sebagai Produsen) akan mengirimkan (_dispatch_) _event_, dan satu Fungsi AWS Lambda (sebagai Konsumen) akan menerima (_consume_) _event_. Selain menerima _event_, Konsumen juga akan menulis log ke AWS CloudWatch Logs untuk memastikan aliran prosesnya berjalan dengan baik.
 
 ## Diagram
-![Diagram Lab 1](https://raw.githubusercontent.com/donnieprakoso/workshop-eventDrivenMicroservices/master/1-lab-basicDispatchConsumeEvent/lab1-diagram.png)
+![Diagram Lab 1](lab1-diagram-id.png)
 
 ## Tugas
 Ini adalah tugas-tugas yang harus Anda kerjakan. Jika Anda mengalami kebingungan, silakan rujuk referensi utama di folder `source/`.
